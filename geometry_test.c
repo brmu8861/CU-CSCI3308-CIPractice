@@ -146,9 +146,9 @@ START_TEST(test_2d_midpoint)
 END_TEST
 
 START_TEST(test_2d_area_triangle){
-	coord_2d a;
-	coord_2d b;
-	coord_2d c;
+	coord_2d_t a;
+	coord_2d_t b;
+	coord_2d_t c;
 
 	a.x = 0;
 	a.y = 4;
@@ -158,10 +158,6 @@ START_TEST(test_2d_area_triangle){
 	c.y = 4;
 
 	ck_assert(coord_2d_area_triangle(&a,&b,&c)==3);
-
-        coord_2d a;
-        coord_2d b;
-        coord_2d c;
 
         a.x = 0;
         a.y = 4;
